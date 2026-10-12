@@ -1,0 +1,426 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Reserve a Table | Chizzy's Kitchen</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head><body><!-- NAVIGATION --><nav class="navbar navbar-expand-lg navbar-dark kitchen-navbar sticky-top"><div class="container">
+
+    <a class="navbar-brand kitchen-brand" href="index.html">
+        CHIZZY'S <span>KITCHEN</span>
+    </a>
+
+    <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+
+        <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Our Menu</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="offers.html">Special Offers</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="reservation.html">Reservation</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+</nav><!-- RESERVATION HERO --><section class="reservation-hero"><div class="container text-center">
+
+    <p class="reservation-label">YOUR TABLE IS WAITING</p>
+
+    <h1>Reserve Your <span>Table</span></h1>
+
+    <p>
+        Make your next dining experience special.
+        Tell us when you're coming, and we'll be happy to hear from you.
+    </p>
+
+</div>
+
+</section><!-- RESERVATION SECTION --><section class="reservation-section"><div class="container">
+
+    <div class="row g-5 align-items-start">
+
+        <!-- LEFT INFORMATION -->
+        <div class="col-lg-5">
+
+            <p class="section-label">LET'S MAKE IT SPECIAL</p>
+
+            <h2 class="reservation-heading">
+                A Wonderful Dining Experience Starts Here
+            </h2>
+
+            <p class="reservation-description">
+                Whether you're planning a romantic dinner, a family
+                gathering, a birthday celebration, or a meal with friends,
+                we'd love to hear from you.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80"
+                alt="Restaurant dining table"
+                class="reservation-image">
+
+
+            <div class="reservation-info">
+
+                <div class="reservation-info-item">
+                    <span class="reservation-icon">✦</span>
+
+                    <div>
+                        <h4>Special Occasions</h4>
+                        <p>Tell us if you're celebrating something special.</p>
+                    </div>
+                </div>
+
+
+                <div class="reservation-info-item">
+                    <span class="reservation-icon">✦</span>
+
+                    <div>
+                        <h4>Personalised Service</h4>
+                        <p>Share your preferences so we can understand your needs.</p>
+                    </div>
+                </div>
+
+
+                <div class="reservation-info-item">
+                    <span class="reservation-icon">✦</span>
+
+                    <div>
+                        <h4>Reservation Confirmation</h4>
+                        <p>We'll need to confirm your request before your table is booked.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RESERVATION FORM -->
+        <div class="col-lg-7">
+
+            <div class="reservation-form-card">
+
+                <div class="reservation-form-heading">
+                    <p class="section-label">BOOK YOUR VISIT</p>
+
+                    <h2>Reservation Form</h2>
+
+                    <p>Fill in your details below.</p>
+                </div>
+
+
+                <form id="reservation-form">
+
+                    <div class="row g-3">
+
+                        <!-- FULL NAME -->
+                        <div class="col-md-6">
+
+                            <label for="guest-name" class="form-label">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="guest-name"
+                                name="guestName"
+                                class="form-control"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="col-md-6">
+
+                            <label for="guest-phone" class="form-label">
+                                Phone Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="guest-phone"
+                                name="guestPhone"
+                                class="form-control"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                                required>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="col-12">
+
+                            <label for="guest-email" class="form-label">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="guest-email"
+                                name="guestEmail"
+                                class="form-control"
+                                placeholder="Enter your email address"
+                                autocomplete="email">
+
+                        </div>
+
+
+                        <!-- DATE -->
+                        <div class="col-md-6">
+
+                            <label for="reservation-date" class="form-label">
+                                Reservation Date *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="reservation-date"
+                                name="reservationDate"
+                                class="form-control"
+                                required>
+
+                        </div>
+
+
+                        <!-- TIME -->
+                        <div class="col-md-6">
+
+                            <label for="reservation-time" class="form-label">
+                                Preferred Time *
+                            </label>
+
+                            <select
+                                id="reservation-time"
+                                name="reservationTime"
+                                class="form-select"
+                                required>
+
+                                <option value="">Choose a time</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- NUMBER OF GUESTS -->
+                        <div class="col-md-6">
+
+                            <label for="guest-count" class="form-label">
+                                Number of Guests *
+                            </label>
+
+                            <select
+                                id="guest-count"
+                                name="guestCount"
+                                class="form-select"
+                                required>
+
+                                <option value="">Select guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8 Guests</option>
+                                <option value="9">9 Guests</option>
+                                <option value="10+">10 or more Guests</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- OCCASION -->
+                        <div class="col-md-6">
+
+                            <label for="occasion" class="form-label">
+                                Occasion
+                            </label>
+
+                            <select
+                                id="occasion"
+                                name="occasion"
+                                class="form-select">
+
+                                <option value="">Choose an occasion</option>
+                                <option value="Regular Dining">Regular Dining</option>
+                                <option value="Birthday">Birthday</option>
+                                <option value="Anniversary">Anniversary</option>
+                                <option value="Family Gathering">Family Gathering</option>
+                                <option value="Business Meeting">Business Meeting</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- SPECIAL REQUESTS -->
+                        <div class="col-12">
+
+                            <label for="special-requests" class="form-label">
+                                Special Requests
+                            </label>
+
+                            <textarea
+                                id="special-requests"
+                                name="specialRequests"
+                                class="form-control"
+                                rows="4"
+                                placeholder="Tell us about any special requests..."></textarea>
+
+                        </div>
+
+
+                        <!-- SUBMIT BUTTON -->
+                        <div class="col-12">
+
+                            <button type="submit" class="reservation-submit-btn">
+                                Submit Reservation Request
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+
+                <div id="reservation-message"
+                     class="reservation-message"
+                     role="status"
+                     aria-live="polite"
+                     hidden>
+                </div>
+
+                <p class="reservation-disclaimer">
+                    Submitting this form sends a request only.
+                    Your reservation is not confirmed until the restaurant
+                    confirms it with you.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section><!-- FOOTER --><footer class="site-footer"><div class="container">
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <h3 class="footer-brand">
+                CHIZZY'S <span>KITCHEN</span>
+            </h3>
+
+            <p>
+                Delicious meals, warm hospitality and memorable
+                dining experiences made with love.
+            </p>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <h4 class="footer-heading">Quick Links</h4>
+
+            <ul class="footer-links">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="offers.html">Special Offers</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="col-md-4">
+
+            <h4 class="footer-heading">Contact Us</h4>
+
+            <p>Phone: Add restaurant phone number</p>
+            <p>Email: Add restaurant email address</p>
+            <p>Location: Add restaurant address</p>
+
+            <a href="contact.html" class="footer-contact-link">
+                Get in Touch
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom text-center">
+
+        <p>
+            &copy; <span class="current-year">2026</span>
+            Chizzy's Kitchen. All Rights Reserved.
+        </p>
+
+    </div>
+
+</div>
+
+</footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/script.js"></script></body></html>
